@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Tartarus-online",
+"productVersion": "0.1",
+"dataUrl": "20210204_AmazonDB_WebGL_build_v21_nodb.data.unityweb",
+"wasmCodeUrl": "20210204_AmazonDB_WebGL_build_v21_nodb.wasm.code.unityweb",
+"wasmFrameworkUrl": "20210204_AmazonDB_WebGL_build_v21_nodb.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.17f1"
+}
