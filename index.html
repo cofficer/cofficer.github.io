@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Tartarus-online | UXF WebGL Experiment</title>
+    <title>Tartarus | UXF WebGL Experiment</title>
     <link rel="stylesheet" href="./Template/style.css" />
-    <script src="Build/UnityLoader.js"></script>
+    <script src="Tartarus"></script>
 
     <!-- AWS SDK required for DynamoDB -->
     <script src="https://sdk.amazonaws.com/js/aws-sdk-2.776.0.min.js"></script>
@@ -16,17 +16,17 @@
 </head>
 
 <body>
-    <h1>Tartarus-online</h1>
+    <h1>Tartarus</h1>
 
-    <div class="centered" style="width: 960px;">
+    <div class="centered" style="width: %UNITY_WIDTH%px;">
         <!-- Edit the description field in Unity WebGL Player Settings -->
-        <p>%UNITY_CUSTOM_DESCRIPTION%</p>
+        <p>SpiersLab UCL experiment</p>
     </div>
 
-    <div class="centered" style="width: 960px; height: 600px;">
+    <div class="centered" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px;">
 
         <!-- Unity content -->
-        <div id="unity-container" style="width: 960px; height: 600px;">
+        <div id="unity-container" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px;">
         </div>
 
         <!-- progress bar & load message -->
@@ -82,7 +82,7 @@
         // Unity Initialization
         var unityInstance = UnityLoader.instantiate(
             "unity-container",
-            "Build/20210204_AmazonDB_WebGL_build_v22.json", {
+            "%UNITY_WEBGL_BUILD_URL%", {
                 onProgress: customProgress
             }
         );
